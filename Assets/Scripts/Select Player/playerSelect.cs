@@ -9,7 +9,6 @@ public class playerSelect : MonoBehaviour
 {
 
     GameObject player, playerCena;
-    Camera cameraCena = Camera.main;
 
     int i;
 
@@ -18,6 +17,7 @@ public class playerSelect : MonoBehaviour
 
     void Start()
     {
+        Camera cameraCena = Camera.main;
         i = 0;
 
         next.onClick = new Button.ButtonClickedEvent();
